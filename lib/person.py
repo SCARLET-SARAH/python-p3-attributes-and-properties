@@ -16,4 +16,10 @@ APPROVED_JOBS = [
 ]
 
 class Person:
-    pass
+    def __init__(self, name, job):
+        self.name = name
+        self.job = job
+
+    def __str__(self):
+        return f"{self.name} is a {self.job}"
+    
